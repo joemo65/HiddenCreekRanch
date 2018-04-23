@@ -5,6 +5,7 @@
       </div>
       <div class="navbar-default">
         <ul class="nav navbar-nav navbar-right">
+            <li routerLinkActive="active"><a routerLink="/horses">Horses</a></li>
             <li class="dropdown" ngbDropdown>
                     <a style="cursor: pointer;" class="dropdown-toggle" role="button" ngbDropdownToggle>Learn How to Ride<span class="caret"></span></a>
                     <ul class="dropdown-menu" ngbDropdownMenu>
@@ -13,9 +14,19 @@
                         <li><a style="cursor: pointer;" routerLink="/learn-how-to-ride/western" >Western</a></li>
                     </ul>
             </li>
-            <li routerLinkActive="active"><a routerLink="/camps">Camps</a></li>
-            <li routerLinkActive="active"><a routerLink="/about-us">About Us</a></li>
+            <li class="dropdown" ngbDropdown>
+                <a style="cursor: pointer;" class="dropdown-toggle" role="button" ngbDropdownToggle>Camps<span class="caret"></span></a>
+                <ul class="dropdown-menu" ngbDropdownMenu>
+                    <li><a style="cursor: pointer;" routerLink="/camps/english-riding" >English Riding</a></li>
+                    <li><a style="cursor: pointer;" routerLink="/camps/english-jumping" >English Jumping</a></li>
+                    <li><a style="cursor: pointer;" routerLink="/camps/trail" >Trail</a></li>
+                    <li><a style="cursor: pointer;" routerLink="/camps/boot-camp" >Boot Camp</a></li>
+                </ul>
+            </li>
             <li routerLinkActive="active"><a routerLink="/instructors">Instructors</a></li>
+            <li routerLinkActive="active"><a routerLink="/about-us">About Us</a></li>
+            <li routerLinkActive="active"><a routerLink="/forms">Forms</a></li> 
+            <li routerLinkActive="active"><a routerLink="/contact">Contact</a></li>
         </ul>
     </div> 
   </div>

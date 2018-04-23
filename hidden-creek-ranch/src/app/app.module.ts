@@ -13,6 +13,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { HorsemanshipComponent } from './learn-how-to-ride/horsemanship/horsemanship.component';
 import { WesternComponent } from './learn-how-to-ride/western/western.component';
 import { EnglishComponent } from './learn-how-to-ride/english/english.component';
+import { EnglishRidingComponent } from './camps/english-riding/english-riding.component';
+import { EnglishJumpingComponent } from './camps/english-jumping/english-jumping.component';
+import { TrailComponent } from './camps/trail/trail.component';
+import { BootCampComponent } from './camps/boot-camp/boot-camp.component';
+import { HorsesComponent } from './horses/horses.component';
+import { FormsComponent } from './forms/forms.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -27,6 +34,13 @@ import { EnglishComponent } from './learn-how-to-ride/english/english.component'
     HorsemanshipComponent,
     WesternComponent,
     EnglishComponent,
+    EnglishRidingComponent,
+    EnglishJumpingComponent,
+    TrailComponent,
+    BootCampComponent,
+    HorsesComponent,
+    FormsComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
