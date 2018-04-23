@@ -1,23 +1,22 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
       <div class="navbar-header">
-          <a class="navbar-brand">Hidden Creek Ranch</a>
+          <a routerLink="/" class="navbar-brand">Hidden Creek Ranch</a>
       </div>
       <div class="navbar-default">
         <ul class="nav navbar-nav navbar-right">
-            <li routerLinkActive="active"><a routerLink="/learn-how-to-ride">Learn How to Ride</a></li>
+            <li class="dropdown" ngbDropdown>
+                    <a style="cursor: pointer;" class="dropdown-toggle" role="button" ngbDropdownToggle>Learn How to Ride<span class="caret"></span></a>
+                    <ul class="dropdown-menu" ngbDropdownMenu>
+                        <li><a style="cursor: pointer;" routerLink="/learn-how-to-ride/horsemanship" >Horsemanship</a></li>
+                        <li><a style="cursor: pointer;" routerLink="/learn-how-to-ride/english" >English</a></li>
+                        <li><a style="cursor: pointer;" routerLink="/learn-how-to-ride/western" >Western</a></li>
+                    </ul>
+            </li>
             <li routerLinkActive="active"><a routerLink="/camps">Camps</a></li>
             <li routerLinkActive="active"><a routerLink="/about-us">About Us</a></li>
             <li routerLinkActive="active"><a routerLink="/instructors">Instructors</a></li>
         </ul>
     </div> 
-      <!-- <div class="navbar-default">
-          <ul class="nav navbar-nav navbar-right">
-              <li routerLinkActive="active"><a routerLink="/learn-how-to-ride">Learn How to Ride</a></li>
-              <li routerLinkActive="active"><a routerLink="/camps">Camps</a></li>
-              <li routerLinkActive="active"><a routerLink="/about-us">About Us</a></li>
-              <li routerLinkActive="active"><a routerLink="/instructors">Instructors</a></li>
-          </ul>
-      </div> -->
   </div>
 </nav>
