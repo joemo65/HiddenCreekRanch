@@ -1,1 +1,10 @@
- 
+.navbar {
+    background-color: transparent;
+    border-color:transparent;
+}
+
+.active > a {
+    background-color: black;
+    opacity: 0.5;
+    color:white;
+}
